@@ -3,42 +3,129 @@
 body {
   margin: 0;
 font-family: 'Montserrat Alternates', sans-serif;
-	background-color: gray;
+	background-color: #fff;
 }
 
 header, container, footer {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: auto;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: auto;
 }
 header{
   grid-template-areas: 
-    ". logo logo nav-bar nav-bar .";
+    ". logo logo logo nav-bar nav-bar nav-bar .";
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0px 1px 20px 1px #666;
+}
+nav ul {
+	font-size: 1em;
+	font-weight: 300;
+	float: right;
+	padding: 0;
+	
+}
+nav li {
+	float: left;
+	list-style: none;
+	padding-left: 1em; 
+	
 }
 .logo {
-	background-color: aqua;
-/*	grid-column: 2/4;*/
+	background-color: #fff;
 	grid-area: logo;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 .nav-bar {
-	background-color: red;
+	background-color: #fff;
 /*	grid-column: 4/6;*/
 	grid-area: nav-bar;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: .2em;
+}
+nav .hamburger{
+	display: none;
 }
 .slider {
 	background-color: orangered;
-	grid-column: 1/7;
-	height: 200px;
+	grid-column: 1/9;
+	height: 300px;
+	margin-top: 5.5em;
 }
 .icons {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	background-color: brown;
-	grid-column: 2/6;
+	grid-column: 2/8;
 	grid-gap: 1em;
 }
 .icon {
 	height: 200px;
 	background-color: aquamarine;
+}
+@media only screen and (max-width: 1000px) {
+
+    nav ul {
+        padding-right: 2em;
+    }
+	.icons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	background-color: brown;
+	grid-column: 1/9;
+	grid-gap: 1em;
+	}
+	header{
+  	grid-template-areas: 
+    "logo logo logo logo nav-bar nav-bar nav-bar nav-bar";
+	}
+	.logo {
+	padding-left: 2em;
+	}
+}
+@media only screen and (max-width: 800px) {
+	nav .hamburger{
+	float: right;
+	padding-right: 2em;
+	padding-top: .5em;
+	display: block;
+	}
+	nav ul {
+	display: none;
 	
+	}
+}
+@media only screen and (max-width: 600px) {
+	header{
+  	grid-template-areas: 
+    "logo logo logo logo logo nav-bar nav-bar nav-bar";
+	}
+	nav .hamburger{
+	float: right;
+	padding-right: .5em;
+	padding-top: .2em;
+	display: block;
+	}
+	.logo {
+	padding-left: .5em;
+		padding-top: .2em;
+	margin-top: .9em;
+	margin-bottom: 1em;
+	}
+	.logo img {
+		width: 12em;
+	}
+	.icons {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	background-color: brown;
+	grid-column: 1/9;
+	grid-gap: 1em;
+	}
+	.slider {
+	margin-top: 5em;
+	}
 }
