@@ -32,6 +32,14 @@ nav li {
 	padding-left: 1em; 
 	
 }
+.icon-title {
+    font-size: 2vw;
+    font-weight: 300;
+    text-align: center;
+    color: #a0792b;
+    padding: 0;
+    margin: 0;
+}
 .logo {
 	background-color: #fff;
 	grid-area: logo;
@@ -50,21 +58,25 @@ nav .hamburger{
 	display: none;
 }
 .slider {
-	background-color: orangered;
 	grid-column: 1/9;
-	height: 300px;
 	margin-top: 5.5em;
+}
+.slider img {
+    width: 100%;
 }
 .icons {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	background-color: brown;
 	grid-column: 2/8;
 	grid-gap: 1em;
+	margin-top: 1em;
+    margin-bottom: 1em;
 }
 .icon {
-	height: 200px;
-	background-color: aquamarine;
+	background-color: #fff;
+}
+.icon img {
+    width: 100%;
 }
 @media only screen and (max-width: 1000px) {
 
@@ -72,11 +84,10 @@ nav .hamburger{
         padding-right: 2em;
     }
 	.icons {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	background-color: brown;
 	grid-column: 1/9;
-	grid-gap: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        grid-gap: 0;
 	}
 	header{
   	grid-template-areas: 
@@ -121,11 +132,14 @@ nav .hamburger{
 	.icons {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	background-color: brown;
 	grid-column: 1/9;
 	grid-gap: 1em;
 	}
 	.slider {
 	margin-top: 5em;
 	}
+    .icon-title {
+        font-size: 8vw;
+        margin-bottom: 1em;
+    }
 }
