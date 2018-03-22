@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  margin: 0;
+font-family: 'Montserrat Alternates', sans-serif;
+	background-color: gray;
+}
+
+header, container, footer {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: auto;
+}
+header{
+  grid-template-areas: 
+    ". logo logo nav-bar nav-bar .";
+}
+.logo {
+	background-color: aqua;
+/*	grid-column: 2/4;*/
+	grid-area: logo;
+}
+.nav-bar {
+	background-color: red;
+/*	grid-column: 4/6;*/
+	grid-area: nav-bar;
+}
+.slider {
+	background-color: orangered;
+	grid-column: 1/7;
+	height: 200px;
+}
+.icons {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	background-color: brown;
+	grid-column: 2/6;
+	grid-gap: 1em;
+}
+.icon {
+	height: 200px;
+	background-color: aquamarine;
+	
+}
