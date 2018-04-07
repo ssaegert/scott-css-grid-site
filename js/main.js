@@ -14,3 +14,25 @@
 		}
 	  });
 })();
+$(window).scroll(function () {
+    $('.web-left-wrap').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+            $(this).removeClass("element-to-hide");
+            $(this).addClass("web-left-animate");
+        }
+    });
+});
+$(window).scroll(function () {
+    $('.web-right-wrap').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+            $(this).removeClass("element-to-hide");
+            $(this).addClass("web-right-animate");
+        }
+    });
+});
