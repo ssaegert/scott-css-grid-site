@@ -305,7 +305,7 @@ nav .hamburger{
 	color: #999;
 }
 .project-main-image{
-	grid-column: 2/8;
+	grid-column: 3/7;
 	margin: 0;
 	padding: 0;
 	margin-top: -1em;
@@ -317,7 +317,7 @@ nav .hamburger{
 	width: 100%;
 }
 .project-main-image2{
-	grid-column: 2/8;
+	grid-column: 3/7;
 	margin: 0;
 	padding: 0;
 	animation: fadein 1s;
@@ -815,6 +815,12 @@ nav .hamburger{
         padding-right: 1em;
         grid-gap: 0;
 	}
+	.project-main-image{
+	grid-column: 2/8;
+	}
+	.project-main-image2{
+	grid-column: 2/8;
+	}
 	header{
   	grid-template-areas: 
     "logo logo logo logo nav-bar nav-bar nav-bar nav-bar";
@@ -848,6 +854,12 @@ nav .hamburger{
 	.inner-container-grid {
     grid-gap: 1em;
 	}
+	.project-main-image{
+	grid-column: 2/8;
+	}
+	.project-main-image2{
+	grid-column: 2/8;
+	}
 }
 @media only screen and (max-width: 907px) {
  nav li {
@@ -864,6 +876,12 @@ nav .hamburger{
 	}
 	.inner-container-grid {
     grid-gap: 1em;
+	}
+	.project-main-image{
+	grid-column: 2/8;
+	}
+	.project-main-image2{
+	grid-column: 2/8;
 	}
 }
 @media only screen and (max-width: 800px) {
@@ -889,6 +907,12 @@ nav .hamburger{
 	}
 	.inner-container-grid {
     grid-gap: 0;
+	}
+	.project-main-image{
+	grid-column: 2/8;
+	}
+	.project-main-image2{
+	grid-column: 2/8;
 	}
 }
 @media only screen and (max-width: 600px) {
@@ -949,6 +973,12 @@ nav .hamburger{
 	}
 	.inner-container-grid {
     grid-gap: 0;
+	}
+	.project-main-image{
+	grid-column: 2/8;
+	}
+	.project-main-image2{
+	grid-column: 2/8;
 	}
 }
 
