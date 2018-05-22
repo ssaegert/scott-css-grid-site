@@ -24,7 +24,7 @@ a:visited {
 	text-decoration: none;
 }
 
-header, container, footer {
+header, main, footer {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
 	grid-template-rows: auto;
