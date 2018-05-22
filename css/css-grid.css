@@ -186,6 +186,9 @@ nav .hamburger{
     transition: background .3s ease-in, transform .3s ease-in;
 
 }
+.social-top-mar {
+    margin-left: 2em;
+}
 .social-top:hover {
     transform: rotate(360deg);
     background-color: #2b5d46;
