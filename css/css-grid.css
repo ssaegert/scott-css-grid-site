@@ -480,6 +480,45 @@ nav .hamburger{
     opacity: 1;
     animation-fill-mode: forwards;
 }
+.email-me {
+    grid-column: 3/7;
+    text-align: center;
+    color: #1e362b;
+    font-size: 1.5em;
+}
+.email-me h2{
+    grid-column: 3/7;
+    text-align: center;
+    color: #1e362b;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 1.5em 0 0 0;
+}
+.email-me a{
+    text-align: center;
+    color: #1e362b;
+    font-size: 1.25em;
+}
+.email-me a:link{
+    text-align: center;
+    color: #1e362b;
+    font-size: 1.25em;
+}
+.email-me a:active{
+    text-align: center;
+    color: #1e362b;
+    font-size: 1.25em;
+}
+.email-me a:visited{
+    text-align: center;
+    color: #1e362b;
+    font-size: 1.25em;
+}
+.email-me a:hover{
+    text-align: center;
+    color: #a0792b;
+    font-size: 1.25em;
+}
 /* ################# Banner Elements ################# */
 .banner {
 	grid-column: 1/9;
