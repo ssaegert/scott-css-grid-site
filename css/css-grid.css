@@ -762,6 +762,10 @@ nav .hamburger{
 .icon img {
     width: 100%;
 }
+.empty-space {
+    grid-column: 3/7;
+    height: 15em;
+}
 
 /* ################# Footer Elements ################# */
 
